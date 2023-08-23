@@ -15,6 +15,34 @@ namespace Pages
         public LoginForm()
         {
             InitializeComponent();
+
+            this.passBox.AutoSize = false;
+            this.passBox.Size = new Size(this.passBox.Size.Width, 35);
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void closeLabel_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void closeLabel_MouseEnter(object sender, EventArgs e)
+        {
+            closeLabel.ForeColor = Color.White;
+        }
+
+        private void closeLabel_MouseLeave(object sender, EventArgs e)
+        {
+            closeLabel.ForeColor = Color.Black;
+        }
+
+        private void mainPanel_MouseMove(object sender, MouseEventArgs e)
+        {
+
         }
     }
 }
